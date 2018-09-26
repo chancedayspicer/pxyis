@@ -1,0 +1,44 @@
+header {
+    background: white;
+}
+
+header h1 {
+    color: #000;
+    background: white;
+    text-align: center;
+}
+
+header ul {
+    text-align: center;
+    display: inline;
+}
+
+header ul li {
+    text-align: center;
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
+
+p {
+    background: white;
+    text-align: center;
+    font-family: arial;
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+h3 {
+    background: white;
+    text-align: center;
+}
+
+ul {
+    color: #000;
+    background: white;
+    text-align: center;
+}
