@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jeep Cherokee</title>
+        <link href="motors.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>Motors</h1>
+            </header>
+            
+            <button class="collapsible">AMC</button>
+            <div class="content">
+                <nav>
+                    <ul>
+                        <a href="amc25.html">AMC 150 Inline 4 (2.5 L)</a>
+                    </ul>
+                    <ul>
+                        <a href="amc242.html">AMC 242 Inline 6 (4.0 L)</a>
+                    </ul>
+                    <ul>
+                        <a href="amc258.html">AMC 258 Inline 6 (4.2 L)</a>
+                    </ul>
+                </nav>
+            </div>
+            
+            <button class="collapsible">Mazda</button>
+            <div class="content">
+                <nav>
+                    <ul>
+                        <a href="wankle.html">13B-REW Wankle Dual Rotary</a>
+                    </ul>
+                </nav>
+            </div>
+            
+            <button class="collapsible">Nissan</button>
+            <div class="content">
+                <nav>
+                    <ul>
+                        <a href="rb26dett.html">RB26DETT</a>
+                    </ul>
+                    <ul>
+                        <a href="vr38dett.html">VR38DETT</a>
+                    </ul>
+                </nav>
+            </div>
+            
+                        <button class="collapsible">Toyota</button>
+            <div class="content">
+                <nav>
+                    <ul>
+                        <a href="2jzgte.html">2JZGTE</a>
+                    </ul>
+                </nav>
+            </div>
+            
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Mazda</h3>
+                         <ul>
+                           <a href="RX7.html">RX7</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>
