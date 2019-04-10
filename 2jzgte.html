@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jeep Cherokee</title>
+        <link href="2jzgte.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>Toyota 2JZGTE</h1>
+            </header>
+            
+            <main>
+                <img src="images/2JZ.jpg" alt="Toyota 2JZGTE">
+                
+                <button class="collapsible">(1991-2007)</button>
+                    <div class="content">
+                    
+                        <h2>2JZGTE Inline 6 format and sound</h2>
+                        <audio controls>
+                            <source src="sounds/toyota_supra_-_turbo.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                        <table>
+                            <tr>
+                                <td>Production</td>
+                                <td>1991-2007</td>
+                            </tr>
+                            <tr>
+                                <td>Cylinder block alloy</td>
+                                <td>Cast-iron</td>
+                            </tr>
+                            <tr>
+                                <td>Valvetrain</td>
+                                <td>DOHC (4 valves per cylinder)</td>
+                            </tr>
+                            <tr>
+                                <td>Piston stroke</td>
+                                <td>3.39in (86mm)</td>
+                            </tr>
+                            <tr>
+                                <td>Cylinder bore</td>
+                                <td>3.39in (86mm)</td>
+                            </tr>
+                            <tr>
+                                <td>Displacement</td>
+                                <td>182.9 cu in (2997 cc)</td>
+                            </tr>
+                            <tr>
+                                <td>Power output</td>
+                                <td>230 HP at 6,000 rpm</td>
+                            </tr>
+                            <tr>
+                                <td>Torque output</td>
+                                <td>216 lb·ft at 3,600 rpm</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            </main>
+            
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Mazda</h3>
+                         <ul>
+                           <a href="RX7.html">RX7</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>

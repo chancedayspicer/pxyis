@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mazda 13B-REW Wankle Dual Rotary</title>
+        <link href="wankle.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>Mazda 13B-REW Wankle Dual Rotary</h1>
+            </header>
+            
+            <main>
+                <img src="images/13brew.jpg" alt="13b-rew Dual Rotary Motor">
+                
+                <button class="collapsible">(1991-2002)</button>
+                <div class="content">
+                    
+                    
+                    <h2>13W-REW Wankle Dual Rotary format and sound</h2>
+                    
+                    <audio controls>
+                        <source src="sounds/mazda_rx7.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <table>
+                        <tr>
+                            <td>Production</td>
+                            <td>1991-2002</td>
+                        </tr>
+                        <tr>
+                            <td>Cylinder block alloy</td>
+                            <td>Aluminum</td>
+                        </tr>
+                        <tr>
+                            <td>Valvetrain</td>
+                            <td>79.81 cu in (1308 cc)</td>
+                        </tr>
+                        <tr>
+                            <td>Piston stroke</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Cylinder bore</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Displacement</td>
+                            <td>2616 cm3</td>
+                        </tr>
+                        <tr>
+                            <td>Power output</td>
+                            <td>236 HP at 6500 RPM</td>
+                        </tr>
+                        <tr>
+                            <td>Torque output</td>
+                            <td>218 lb-ft at 5000 RPM</td>
+                        </tr>
+                        <tr>
+                            <td>Turbocharger</td>
+                            <td>2x Garrett M24</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+        
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Jeep</h3>
+                         <ul>
+                           <a href="cherokee.html">Cherokee</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>

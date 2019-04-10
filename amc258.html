@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jeep Cherokee</title>
+        <link href="amc258.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>AMC 4.0 Inline 6</h1>
+            </header>
+            
+            <article>
+                <p>
+                </p>
+            </article>
+            
+            <main>
+                <img src="images/258.jpg" alt="Jeep Inline 6">
+                
+                <h2>AMC 4.2 L Inline Six format and sound (1987-1990)</h2>
+                
+                <audio controls>
+                    <source src="sounds/242cherokee.mp3" type="audio/mpeg">
+                </audio>
+                
+                <table>
+                    <tr>
+                        <td>Production</td>
+                        <td>1987-1990</td>
+                    </tr>
+                    <tr>
+                        <td>Cylinder block alloy</td>
+                        <td>Cast iron</td>
+                    </tr>
+                    <tr>
+                        <td>Carburatrion</td>
+                        <td>2 barrel Carter BBD</td>
+                    </tr>
+                    <tr>
+                        <td>Valvetrain</td>
+                        <td>OHV</td>
+                    </tr>
+                    <tr>
+                        <td>Piston stroke</td>
+                        <td>3.41 in (8.66 cm)</td>
+                    </tr>
+                    <tr>
+                        <td>Cylinder bore</td>
+                        <td>3.75 in</td>
+                    </tr>
+                    <tr>
+                        <td>Displacement</td>
+                        <td>258 cu (4.2L)</td>
+                    </tr>
+                    <tr>
+                        <td>Power output</td>
+                        <td>112 hp at 3200 rpm</td>
+                    </tr>
+                    <tr>
+                        <td>Torque output</td>
+                        <td>210 lb ft at 2000 rpm</td>
+                    </tr>
+                </table>
+            </main>
+            
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Mazda</h3>
+                         <ul>
+                           <a href="RX7.html">RX7</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>

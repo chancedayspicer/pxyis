@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jeep Cherokee</title>
+        <link href="cherokee.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>Jeep Cherokee</h1>
+            </header>
+            
+            <img src="images/94cherokee.jpg" alt="Stock 94 Jeep Cherokee">
+            
+            <h2>Stock 94 Jeep Cherokee XJ</h2>
+            
+            
+            <button class="collapsible">SJ (1974-1983)</button>
+            <div class="content">
+                
+                <h2>Drivetrain</h2>
+                
+                <table>
+                    <tr>
+                        <td>Layout</td>
+                        <td>Both 4WD and 2WD (Rear Wheel)</td>
+                    </tr>S
+                    <tr>
+                        <td>Transmisson</td>
+                        <td>Borg Warner (4 Speed Automatic) or AX-15 (5 Speed Manual w/ overdrive)</td>
+                    <tr>
+                        <td>4WD Front Axle</td>
+                        <td>Dana 30</td>
+                    </tr>
+                    <tr>
+                        <td>4WD Rear Axle</td>
+                        <td>Chrysler 8.25</td>
+                    </tr>
+                    <tr>
+                        <td>2WD Rear Axle</td>
+                        <td>Dana 35 (if equipped with ABS) or Chrysler 8.25</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button class="collapsible">XJ (1991-1995)</button>
+            <div class="content">
+                
+                <h2>Drivetrain</h2>
+                
+                <table>
+                    <tr>
+                        <td>Layout</td>
+                        <td>Both 4WD and 2WD (Rear Wheel)</td>
+                    </tr>
+                    <tr>
+                        <td>Transmisson</td>
+                        <td>Borg Warner (4 Speed Automatic) or AX-15 (5 Speed Manual w/ overdrive)</td>
+                    <tr>
+                        <td>4WD Front Axle</td>
+                        <td>Dana 30</td>
+                    </tr>
+                    <tr>
+                        <td>4WD Rear Axle</td>
+                        <td>Chrysler 8.25</td>
+                    </tr>
+                    <tr>
+                        <td>2WD Rear Axle</td>
+                        <td>Dana 35 (if equipped with ABS) or Chrysler 8.25</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button class="collapsible">XJ (1999-2001)</button>
+            <div class="content">
+                
+                <h2>Drivetrain</h2>
+                
+                <table>
+                    <tr>
+                        <td>Layout</td>
+                        <td>Both 4x4 and Rear Wheel Drive</td>
+                    </tr>
+                    <tr>
+                        <td>Transmisson</td>
+                        <td>4 Speed Automatic or 5 Speed Manual</td>
+                </table>
+            </div>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Mazda</h3>
+                         <ul>
+                           <a href="RX7.html">RX7</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>

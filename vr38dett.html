@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link href="vr38dett.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    
+        <body>
+            <header>
+                <h1><a href="index.html">Gearhead Index</a></h1>
+                <h1>Nissan VR38DETT</h1>
+            </header>
+            
+            <main>
+                <img src="images/vr38dett.jpg" alt="Nissan VR38DETT">
+                
+                <button class="collapsible">(2007-present)</button>
+                <div class="content">
+                    <h2>VR38DETT V6 format and sound</h2>
+                    
+                    <audio controls>
+                        <source src="sounds/nissan_skyline_r34.mp3" type="audio/mpeg">
+                    </audio>
+                
+                    <table>
+                        <tr>
+                            <td>Production</td>
+                            <td>2007-present</td>
+                        </tr>
+                        <tr>
+                            <td>Cylinder block alloy</td>
+                            <td>Aluminum</td>
+                        </tr>
+                        <tr>
+                            <td>Valvetrain</td>
+                            <td>DOHC (4 valves per cylinder)</td>
+                        </tr>
+                        <tr>
+                            <td>Piston stroke</td>
+                            <td>3.48 in (88.4m)</td>
+                        </tr>
+                        <tr>
+                            <td>Cylinder bore</td>
+                            <td>3.76 in (95.5m)</td>
+                        </tr>
+                        <tr>
+                            <td>Displacement</td>
+                            <td>231.8 cu in (3799 cc) </td>
+                        </tr>
+                        <tr>
+                            <td>Power output</td>
+                            <td>600 HP (441 kW) at 6,800 rpm</td>
+                        </tr>
+                        <tr>
+                            <td>Torque output</td>
+                            <td>467 lb·ft (633 Nm) at 3,300-5,800 rpm</td>
+                        </tr>
+                        <tr>
+                            <td>Turbocharger</td>
+                            <td>2x IHI RHF55</td>
+                        </tr> 
+                    </table>
+                </div>
+            </main>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+        
+            <footer>
+                <h2>Manufacturers</h2>
+                   <nav>
+                    <h3>Jeep</h3>
+                         <ul>
+                           <a href="cherokee.html">Cherokee</a>
+                         </ul>
+                    <h3>Nissan</h3>
+                         <ul>
+                           <a href="skylineGTR.html">Skyline GTR</a>
+                         </ul>
+                    <h3>Toyota</h3>
+                         <ul>
+                           <a href="Supra.html">Supra</a>
+                         </ul>
+                    </nav>
+            </footer>
+        </body>
+</html>
