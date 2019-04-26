@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Gearhead Index</title>
-        <link href="motors.css" rel="stylesheet" type="text/css">
+        <title>Mazda</title>
+        <link href="mazda.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://use.typekit.net/cny4hge.css">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     </head>
 
-    <body>
+        <body>
             <div class="header">
             			<div class="rectangle"></div>
             				<img src="images/gearhead.png" class="image1" alt="Logo">
@@ -58,70 +58,49 @@
                 		  });
                 		});
                 	</script>
-                	
+                    
             <main>
-                <button class="collapsible">AMC</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="amc25.html">AMC 150 Inline 4 (2.5 L)</a>
-                        </ul>
-                        <ul>
-                            <a href="amc242.html">AMC 242 Inline 6 (4.0 L)</a>
-                        </ul>
-                        <ul>
-                            <a href="amc258.html">AMC 258 Inline 6 (4.2 L)</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <button class="collapsible">Mazda</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="wankle.html">13B-REW Wankle Dual Rotary</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <button class="collapsible">Nissan</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="rb26dett.html">RB26DETT</a>
-                        </ul>
-                        <ul>
-                            <a href="vr38dett.html">VR38DETT</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                            <button class="collapsible">Toyota</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="2jzgte.html">2JZGTE</a>
-                        </ul>
-                    </nav>
-                </div>
+                <h6>
+                    The more you know about cars, the better you'll be at fixing them. Take a look though all of
+                    them to better know your car on and off the track.
+                </h6>
             </main>
             
+            		
+            <div class="rx7">
+              <a href="rx7.html">RX-7</a>
+            </div>
+            
+            <div class="rx8">
+              <a href="rx8.html">RX-8</a>
+            </div>
+            
+            <div class="miata">
+              <a href="miata.html">Miata</a>
+            </div>
             
             <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
                 
-                for (i = 0; i < coll.length; i++) {
-                  coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                      content.style.display = "none";
-                    } else {
-                      content.style.display = "block";
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
                     }
-                  });
+                  }
                 }
             </script>
-    </body>
+            
+            
+            <footer>
+            </footer>
+        </body>
 </html>

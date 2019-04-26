@@ -6,7 +6,7 @@ body {
 .header {
 	width: 100%;
 	height: 80vh;
-	background: url(images/gtr1.jpg);
+	background: url(images/rx7.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -177,6 +177,77 @@ main h6 {
 	text-align: center;
 }
 
+.rx7 {
+    width: 100%;
+	height: 50vh;
+	color: white;
+	background: url(images/rx71.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.rx7 a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: source-sans-pro,sans-serif;
+    text-decoration: none;
+    float: middle;
+}
+
+.rx7:hover {
+	min-height: 10px;
+	transition: 0.4s ease 0s;
+	opacity: .5;
+}
+
+.rx8 {
+    width: 100%;
+	height: 50vh;
+	background: url(images/rx81.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.rx8 a {
+    margin-left: auto;
+    margin-right auto;
+    color: white;
+    text-align: center;
+    font-family: source-sans-pro,sans-serif;
+    text-decoration: none;
+    float: middle;
+}
+
+.rx8:hover {
+	transition: 0.4s ease 0s;
+	opacity: .5;
+}
+
+.miata {
+    width: 100%;
+	height: 50vh;
+	background: url(images/miata.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.miata a {
+    margin-left: auto;
+    margin-right auto;
+    color: white;
+    text-align: center;
+    font-family: source-sans-pro,sans-serif;
+    text-decoration: none;
+    float: middle;
+}
+
+.miata:hover {
+
+	transition: 0.4s ease 0s;
+	opacity: .5;
+}
+
 .example_c {
 	color: #494949 !important;
 	text-transform: uppercase;
@@ -199,41 +270,47 @@ main h6 {
 	transition: all 0.4s ease 0s;
 }
 
-section {
-	width: 100%;
-	height: 88vh;
-	background: url(images/challenger.jpg);
-	background-size: cover;
-	background-attachment: fixed;
+main .collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
 }
 
-article {
-	font-family: source-sans-pro,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	padding-left: 20px;
+main .active, .collapsible:hover {
+  background-color: #E9E9E9;
 }
 
-
-footer {
-    padding-top: 40 px;
+main .content {
+  padding: 0 18px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
 }
 
-footer h2 {
-    text-align: center;
-    padding: 1px 1px 1px 1px;
-    background: white;
+main .content img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer h3 {
-    background: white;
-    text-align: center;
-}
-
-footer ul {
-    color: #000;
-    background: white;
-    text-align: center;
+main .content table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    width: 500px;
+}
+
+main td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }

@@ -6,7 +6,7 @@ body {
 .header {
 	width: 100%;
 	height: 80vh;
-	background: url(images/gtr1.jpg);
+	background: url(images/grandcherokee.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -177,6 +177,54 @@ main h6 {
 	text-align: center;
 }
 
+.cherokee {
+    width: 100%;
+	height: 50vh;
+	color: white;
+	background: url(images/newcherokee.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.cherokee a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: source-sans-pro,sans-serif;
+    text-decoration: none;
+    float: middle;
+}
+
+.cherokee:hover {
+	min-height: 10px;
+	transition: 0.4s ease 0s;
+	opacity: .5;
+}
+
+.grandcherokee {
+    width: 100%;
+	height: 50vh;
+	background: url(images/grandcherokee1.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.grandcherokee a {
+    margin-left: auto;
+    margin-right auto;
+    color: white;
+    text-align: center;
+    font-family: source-sans-pro,sans-serif;
+    text-decoration: none;
+    float: middle;
+}
+
+.grandcherokee:hover {
+	min-height: 10px;
+	transition: 0.4s ease 0s;
+	opacity: .5;
+}
+
 .example_c {
 	color: #494949 !important;
 	text-transform: uppercase;
@@ -202,7 +250,7 @@ main h6 {
 section {
 	width: 100%;
 	height: 88vh;
-	background: url(images/challenger.jpg);
+	background: url(images/);
 	background-size: cover;
 	background-attachment: fixed;
 }

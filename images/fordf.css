@@ -1,0 +1,49 @@
+header {
+    background: white;
+}
+
+header h1 {
+    color: #000;
+    background: white;
+    text-align: center;
+}
+
+header ul {
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul li {
+    text-align: center;
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2 {
+    background: white;
+    text-align: center;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    background: white;
+}
+
+footer h3 {
+    background: white;
+    text-align: center;
+}
+
+footer ul {
+    color: #000;
+    background: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Gearhead Index</title>
-        <link href="motors.css" rel="stylesheet" type="text/css">
+        <title>Jeep</title>
+        <link href="jeep.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://use.typekit.net/cny4hge.css">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     </head>
 
-    <body>
+        <body>
             <div class="header">
             			<div class="rectangle"></div>
             				<img src="images/gearhead.png" class="image1" alt="Logo">
@@ -58,70 +58,52 @@
                 		  });
                 		});
                 	</script>
-                	
+                    
             <main>
-                <button class="collapsible">AMC</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="amc25.html">AMC 150 Inline 4 (2.5 L)</a>
-                        </ul>
-                        <ul>
-                            <a href="amc242.html">AMC 242 Inline 6 (4.0 L)</a>
-                        </ul>
-                        <ul>
-                            <a href="amc258.html">AMC 258 Inline 6 (4.2 L)</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <button class="collapsible">Mazda</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="wankle.html">13B-REW Wankle Dual Rotary</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <button class="collapsible">Nissan</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="rb26dett.html">RB26DETT</a>
-                        </ul>
-                        <ul>
-                            <a href="vr38dett.html">VR38DETT</a>
-                        </ul>
-                    </nav>
-                </div>
-                
-                            <button class="collapsible">Toyota</button>
-                <div class="content">
-                    <nav>
-                        <ul>
-                            <a href="2jzgte.html">2JZGTE</a>
-                        </ul>
-                    </nav>
-                </div>
+                <h6>
+                    Jeep's current product range consists solely of sport utility vehicles and off-road vehicles, 
+                    but has also included pickup trucks and roadsters in the past; Jeep will return to the pickup
+                    truck market in early 2019. Some of Jeep's vehicles—such as the Grand Cherokee—reach into the 
+                    luxury SUV segment, a market segment the Wagoneer is considered to have created. Jeep sold 1.4 
+                    million SUVs globally in 2016, up from 500,000 in 2008, two-thirds of which in North America,
+                    and was Fiat-Chrysler's best selling brand in the U.S. during the first half of 2017. In the 
+                    U.S. alone, over 2400 dealerships hold franchise rights to sell Jeep-branded vehicles, and if 
+                    Jeep were spun off into a separate company, it is estimated to be worth between $22 and 
+                    $33.5 billion—slightly more than all of FCA (US).
+                </h6>
             </main>
             
+            		
+            <div class="cherokee">
+              <a href="cherokee.html">Cherokee</a>
+            </div>
+            
+            <div class="grandcherokee">
+              <a href="grandcherokee.html">Grand Cherokee</a>
+            </div>
             
             <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
                 
-                for (i = 0; i < coll.length; i++) {
-                  coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                      content.style.display = "none";
-                    } else {
-                      content.style.display = "block";
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
                     }
-                  });
+                  }
                 }
             </script>
-    </body>
+            
+            
+            <footer>
+            </footer>
+        </body>
 </html>
